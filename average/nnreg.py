@@ -74,6 +74,18 @@ def model_rectify(X, w_h, w_h2, w_o, p_drop_input, p_drop_hidden):
     py_x = T.dot(h2, w_o)
     return h, h2, py_x
 
+def get_approx_Hessian_difference():
+    return 0 # TODO
+
+def get_approx_Hessian_outerprod():
+    return 0 # TODO
+
+def get_approx_Hessian_Rbackprop():
+    return 0 # TODO
+
+def get_sensitivity_matrix():
+    return 0 # TODO
+
 # generate some training data
 trX = np.linspace(-1, 1, 101)
 trY = (trX-0.5)**3 + np.sin(5*trX) + 0.2*np.random.randn(101,)
